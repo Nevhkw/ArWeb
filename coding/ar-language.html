@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="ms">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Pilih Bahasa Audio | Lumondou</title>
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@400;700&family=Crimson+Text:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+  <style>
+      /* Force center alignment for this specific page */
+      body {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          justify-content: center;
+          min-height: 100vh;
+      }
+  </style>
+</head>
+
+<body>
+  <div id="particles"></div>
+
+  <div class="lang-container">
+    <h1 style="color: var(--gold); margin-bottom: 10px;">Tetapan Bahasa</h1>
+    <p style="color: #f4e4bc; font-style: italic; margin-bottom: 30px;">
+        Sila pilih bahasa audio untuk mendengar kisah <b>Lagenda Lumondou</b> dalam mod AR.
+    </p>
+
+    <div class="lang-options">
+      <button class="lang-btn" onclick="startAR('bm')">
+        Bahasa Melayu
+      </button>
+
+      <button class="lang-btn" onclick="startAR('en')">
+        English
+      </button>
+
+      <button class="lang-btn" onclick="startAR('ds')">
+        Bahasa Dusun
+      </button>
+      
+      <br>
+      <a href="index.html" style="color:white; margin-top:15px; text-decoration:underline;">← Kembali ke Laman Utama</a>
+    </div>
+  </div>
+
+  <script src="ui.js"></script>
+  <script>
+    function startAR(langCode){
+      // Map language to AR pages
+      const AR_PAGES = {
+        bm: "scanBM.html",   // Maps to Malay AR
+        en: "scanEng.html",  // Maps to English AR
+        ds: "scanDusun.html" // Maps to Dusun AR
+      };
+
+      const targetPage = AR_PAGES[langCode];
+
+      if(targetPage){
+        window.location.href = targetPage;
+      } else {
+        alert("Halaman AR tidak dijumpai.");
+      }
+    }
+  </script>
+
+</body>
+</html>

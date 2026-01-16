@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="ms">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Jurnal Lumondou | Misi AR</title>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@400;700&family=Crimson+Text:ital,wght@0,400;0,600;1,400&family=Patrick+Hand&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+    <div id="particles"></div>
+
+    <div class="book-container">
+        
+        <div class="nav-track">
+            <nav>
+                <a href="#hero" class="navLink">Laman Utama</a>
+                <a href="#story" class="navLink">Sinopsis</a>
+                <a href="#ar" class="navLink">Cara Guna</a>
+                <a href="#chars" class="navLink">Karakter</a>
+                <a href="#about" class="navLink">Tentang Kami</a>
+            </nav>
+        </div>
+
+        <header id="hero" class="hero reveal">
+            <p style="text-transform: uppercase; letter-spacing: 2px; font-size: 0.9rem;">CERITA RAKYAT SABAH</p>
+            <h1>LUMONDOU</h1>
+            <span class="hero-subtitle">Si Singa</span>
+            <p>Jurnal pemerhatian tentang rahsia purba dan makhluk mitos di Tambunan.</p>
+            
+            <div class="btn-group">
+                <a href="#story" class="cta-btn">📖 Baca Jurnal</a>
+                <a href="ar-language.html" class="cta-btn scan-btn">📷 Mula Imbas AR</a>
+            </div>
+        </header>
+
+        <section id="story" class="reveal">
+            <h2 class="section-title">Sinopsis Ringkas</h2>
+            <div class="synopsis-container">
+                <div class="synopsis-text">
+                    <div class="lang-tabs">
+                        <button class="tab-btn active" onclick="switchSynopsisLang('ms', this)">Bahasa Melayu</button>
+                        <button class="tab-btn" onclick="switchSynopsisLang('en', this)">English</button>
+                        <button class="tab-btn" onclick="switchSynopsisLang('dusun', this)">Dusun</button>
+                    </div>
+
+                    <div id="synopsis-ms" class="story-content">
+                        <p>
+                            Di sebuah lembah di Tambunan, Sabah, ketenangan penduduk kampung terganggu. Seekor singa tua, yang dikenali sebagai <strong>Singa Mondou</strong>, mula memburu manusia apabila ia tidak lagi mampu mengejar haiwan liar di hutan.
+                        </p>
+                        <p>
+                            Penduduk kampung tidak mempunyai senjata api. Mereka terpaksa menggunakan <span style="color:var(--accent-red); font-weight:bold;">buluh runcing</span> dan strategi bijak untuk melindungi keluarga mereka.
+                        </p>
+                    </div>
+
+                    <div id="synopsis-en" class="story-content" style="display:none;">
+                        <p>
+                            In a valley in Tambunan, Sabah, the peace of the villagers was shattered. An old lion, known as <strong>Singa Mondou</strong>, began hunting humans when it could no longer catch wild prey in the jungle.
+                        </p>
+                        <p>
+                            The villagers had no firearms. They were forced to use <span style="color:var(--accent-red); font-weight:bold;">sharpened bamboo</span> and clever strategies to protect their families.
+                        </p>
+                    </div>
+
+                    <div id="synopsis-dusun" class="story-content" style="display:none;">
+                        <p>
+                            Id iso bawang id Tambunan, Sabah, norumbak o kotoronongon do tulun kampung. Iso singa odomon, pinungaranan do <strong>Singa Mondou</strong>, tumimpuun mangkan do tulun soira au nodi kaanu mangkan do tayam.
+                        </p>
+                        <p>
+                            Aso sinapang do tulun kampung. Mositi yolo momoguno <span style="color:var(--accent-red); font-weight:bold;">tombu</span> om akal di abaal montok manampasi do paganakan diolo.
+                        </p>
+                    </div>
+
+                    <div class="handwritten-note">
+                        Nota: Jangan pandang rendah pada buluh! Ia lebih tajam dari pedang jika digunakan dengan betul.
+                    </div>
+                </div>
+                <div class="book-visual-container">
+                    <div class="book-wrapper">
+                        <div class="book-3d">
+                            <img src="./assets/images/coverpage.png" alt="Lakaran Kampung" class="book-cover-img">
+                        </div>
+                    </div>
+                    <p class="image-caption">Raj. 1: Muka Buku Cerita Rakyat Sabah : LUMONDOU</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="ar" class="reveal">
+            <h2 class="section-title">Manual Penggunaan AR</h2>
+            <div class="ar-grid">
+                <div class="ar-card">
+                    <div class="ar-number">Langkah 1</div>
+                    <h3>Pilih Bahasa</h3>
+                    <p>Tekan butang "Mula Imbas AR" dan pilih bahasa audio pilihan anda (BM, English, atau Dusun).</p>
+                </div>
+                <div class="ar-card">
+                    <div class="ar-number">Langkah 2</div>
+                    <h3>Kesan Sasaran</h3>
+                    <p>Halakan kamera telefon ke arah gambar di dalam buku. Tunggu lingkaran magis muncul.</p>
+                </div>
+                <div class="ar-card">
+                    <div class="ar-number">Langkah 3</div>
+                    <h3>Interaksi</h3>
+                    <p>Singa Mondou akan muncul! Sentuh skrin untuk mendengar cerita, atau 'pinch' untuk membesarkan model.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="chars" class="reveal">
+            <h2 class="section-title">Karakter</h2>
+            <div class="char-flex">
+                <div class="char-item">
+                    <div class="char-img-wrapper">
+                        <img src="./assets/images/singa.png" alt="Singa Mondou">
+                    </div>
+                    <h3>Singa Mondou</h3>
+                    <p style="font-family: var(--font-hand); font-size: 1.1rem; color: #555;">Status: Sangat Berbahaya</p>
+                </div>
+                <div class="char-item">
+                    <div class="char-img-wrapper">
+                        <img src="./assets/images/ketuakampung.png" alt="Wira">
+                    </div>
+                    <h3>Datuk Penghulu</h3>
+                    <p style="font-family: var(--font-hand); font-size: 1.1rem; color: #555;">Status: Pelindung</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="about" class="reveal">
+            <h2 class="section-title">Tentang Kami</h2>
+            <div class="char-flex">
+                <div class="char-item">
+                    <div class="char-img-wrapper">
+                        <img src="./assets/images/awang.jpeg" alt="Ahli 1">
+                    </div>
+                    <h3>AWANG AIZIEL AZEEM</h3>
+                    <p style="font-family: var(--font-hand); font-size: 1.1rem; color: #555;">BI23110128</p>
+                </div>
+                <div class="char-item">
+                    <div class="char-img-wrapper">
+                        <img src="./assets/images/glor.jpeg" alt="Ahli 2">
+                    </div>
+                    <h3>GLORIE OCTAVIA</h3>
+                    <p style="font-family: var(--font-hand); font-size: 1.1rem; color: #555;">BI23110217</p>
+                </div>
+                <div class="char-item">
+                    <div class="char-img-wrapper">
+                        <img src="./assets/images/nev.jpeg" alt="Ahli 3">
+                    </div>
+                    <h3>NEVILLE HO</h3>
+                    <p style="font-family: var(--font-hand); font-size: 1.1rem; color: #555;">BI23110129</p>
+                </div>
+                <div class="char-item">
+                    <div class="char-img-wrapper">
+                        <img src="./assets/images/apiq.jpg" alt="Ahli 4">
+                    </div>
+                    <h3>MOHD AFIQ AMIZIE</h3>
+                    <p style="font-family: var(--font-hand); font-size: 1.1rem; color: #555;">BI23160403</p>
+                </div>
+            </div>
+        </section>
+
+        <footer>
+            <p>&copy; 2026 University Malaysia Sabah. Hak cipta terpelihara.</p>
+            <p>Dibina untuk tujuan pendidikan sejarah dan warisan.</p>
+        </footer>
+
+    </div>
+
+    <script src="ui.js"></script>
+
+</body>
+</html>
